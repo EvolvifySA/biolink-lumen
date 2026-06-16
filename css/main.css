@@ -2,16 +2,16 @@
    VARIABLES & RESET
 ═══════════════════════════════════ */
 :root {
-  --g:#C9A84C; --g2:#B8952A; --g3:#E8C76D;
-  --dark:#0c0b09; --dark2:#131209; --card:#1a1812;
-  --card2:#201e14; --border:rgba(201,168,76,0.12);
-  --text:#f0ead8; --dim:#8a7e5e; --white:#ffffff;
-  --shadow:rgba(0,0,0,0.4);
+  --g:#B08C2C; --g2:#937219; --g3:#C9A84C;
+  --bg:#faf7f0; --dark:#2b2410; --dark2:#efe7d6; --card:#ffffff;
+  --card2:#f6f0e4; --border:rgba(176,140,44,0.22);
+  --text:#473f2e; --dim:#8a7e64; --white:#241f14;
+  --shadow:rgba(90,70,20,0.10);
   --safe-t:env(safe-area-inset-top,0px);
   --safe-b:env(safe-area-inset-bottom,0px);
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{height:100%;overflow:hidden;background:var(--dark)}
+html,body{height:100%;overflow:hidden;background:var(--bg)}
 body{font-family:'DM Sans',sans-serif;color:var(--text);cursor:none;overscroll-behavior:none}
 @media(max-width:480px){body{cursor:auto}}
 
@@ -27,10 +27,10 @@ body{font-family:'DM Sans',sans-serif;color:var(--text);cursor:none;overscroll-b
 /* ══════════════════════════════
    PAGE SYSTEM
 ══════════════════════════════ */
-.pg{position:fixed;inset:0;z-index:10;background:var(--dark);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;transition:transform .38s cubic-bezier(.4,0,.2,1),opacity .38s;will-change:transform}
+.pg{position:fixed;inset:0;z-index:10;background:var(--bg);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;transition:transform .38s cubic-bezier(.4,0,.2,1),opacity .38s;will-change:transform}
 #home{z-index:5;transform:translateX(0);background:transparent}
 #home.behind{transform:scale(.93) translateX(-5%);opacity:.45;pointer-events:none}
-.subpg{transform:translateX(100%);z-index:20;background:var(--dark)}
+.subpg{transform:translateX(100%);z-index:20;background:var(--bg)}
 .subpg.active{transform:translateX(0)}
 
 /* ── Animations ── */

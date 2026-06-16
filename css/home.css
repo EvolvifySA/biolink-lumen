@@ -6,7 +6,7 @@
 /* Avatar */
 .hdr{text-align:center;margin-bottom:24px;animation:fadeD .7s ease both}
 .avatar-shell{width:96px;height:96px;margin:0 auto 16px;border-radius:50%;position:relative}
-.avatar-ring{position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(var(--g),var(--g2),var(--g),#0c0b09 60%,var(--g));animation:spin 4s linear infinite}
+.avatar-ring{position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(var(--g),var(--g2),var(--g),var(--dark2) 60%,var(--g));animation:spin 4s linear infinite}
 .avatar-inner{position:absolute;inset:3px;border-radius:50%;background:var(--dark2);overflow:hidden;display:flex;align-items:center;justify-content:center}
 .avatar-inner img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .cname{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;color:var(--white);letter-spacing:-.03em}
@@ -35,6 +35,7 @@
 .cico img{width:100%;height:100%;object-fit:cover;display:block}
 .cico svg{width:22px;height:22px;display:block}
 .cico.photo-ico{overflow:hidden;padding:0}
+.cico.photo-ico img{object-position:center 20%}
 .wa-ico{background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.2)}
 .ig-ico{background:rgba(225,48,108,.1);border:1px solid rgba(225,48,108,.15)}
 .cal-ico{background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.18)}
@@ -55,8 +56,8 @@
 .lumen-card{width:100%;max-width:420px;background:var(--card);border:1px solid rgba(201,168,76,.2);border-radius:16px;overflow:hidden;position:relative;margin-bottom:20px;animation:fadeU .65s .12s ease both}
 .lumen-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--g),transparent)}
 .lumen-card-photo{width:100%;overflow:hidden;position:relative;background:var(--dark2)}
-.lumen-card-photo img{width:100%;height:auto;max-height:480px;object-fit:cover;display:block}
-.lumen-card-photo-grad{position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(26,24,18,0.97))}
+.lumen-card-photo img{width:100%;height:auto;object-fit:cover;display:block}
+.lumen-card-photo-grad{position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(255,255,255,0.97))}
 .lumen-card-text{padding:16px 18px 22px;position:relative;z-index:2;background:var(--card)}
 .lumen-card-tag{font-size:10px;color:var(--g);text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-bottom:10px}
 .lumen-card-name{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--white);letter-spacing:-.02em;margin-bottom:4px}
@@ -73,7 +74,7 @@
 .mcard-media img,.mcard-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .mcard-overlay{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px;text-align:center;background:linear-gradient(145deg,rgba(12,11,9,.3),rgba(12,11,9,.6))}
 .mq-icon{font-size:26px;margin-bottom:7px}
-.mq-text{font-size:12px;font-weight:600;color:var(--white);line-height:1.4}
+.mq-text{font-size:12px;font-weight:600;color:#fff;line-height:1.4}
 .mq-tag{font-size:10px;color:rgba(201,168,76,.7);margin-top:6px;font-family:'Syne',sans-serif;letter-spacing:.04em}
 .mcard-foot{background:var(--card2);padding:9px 11px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(201,168,76,.08)}
 .mcard-label{font-size:11px;font-weight:600;color:var(--text)}
@@ -94,7 +95,7 @@
 .hours-grid{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
 .hours-row{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-radius:8px;font-size:12.5px}
 .hours-row.open{background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.12)}
-.hours-row.closed{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06)}
+.hours-row.closed{background:rgba(0,0,0,.03);border:1px solid rgba(0,0,0,.06)}
 .hours-day{color:var(--text);font-weight:500}
 .hours-row.open .hours-time{color:var(--g);font-weight:700}
 .hours-row.closed .hours-time{color:var(--dim);font-style:italic}
