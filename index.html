@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Lúmen Espaço de Beleza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-r"></div>
+<canvas id="nc"></canvas>
+
+<!-- ════════════════════════════════
+     HOME
+════════════════════════════════ -->
+<div class="pg" id="home">
+  <div class="home-wrap">
+
+    <div class="hdr">
+      <div class="avatar-shell">
+        <div class="avatar-ring"></div>
+        <div class="avatar-inner">
+          <img src="assets/images/asduasjuntas.jpeg" alt="Lúmen Espaço de Beleza">
+        </div>
+      </div>
+      <div class="cname">Lúmen Espaço de Beleza</div>
+      <div class="ctag">Espaço de Beleza &nbsp;|&nbsp; João Pessoa, PB</div>
+      <div class="cbio">Enilma &amp; Luciana · Fundado em 2012<br>Terça a Sábado · Com hora marcada</div>
+      <div class="badges">
+        <span class="badge">Selagem</span>
+        <span class="badge">Mechas</span>
+        <span class="badge">Coloração</span>
+        <span class="badge">Tratamentos</span>
+        <span class="badge">Corte</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="sn" data-t="13">0</div><div class="sl">Anos</div></div>
+      <div class="ss"></div>
+      <div class="stat"><div class="sn" data-t="14">0</div><div class="sl">Serviços</div></div>
+      <div class="ss"></div>
+      <div class="stat"><div class="sn">5★</div><div class="sl">Avaliação</div></div>
+    </div>
+
+    <!-- Lúmen Card (foto das fundadoras) -->
+    <div class="lumen-card">
+      <div class="lumen-card-photo">
+        <img src="assets/images/asduas3.jpeg" alt="Enilma e Luciana — Lúmen Espaço de Beleza">
+        <div class="lumen-card-photo-grad"></div>
+      </div>
+      <div class="lumen-card-text">
+        <div class="lumen-card-tag">Espaço de Beleza · Fundado em 2012</div>
+        <div class="lumen-card-name">Enilma &amp; Luciana</div>
+        <div class="lumen-card-sub">Realçando beleza e autoestima desde 2012 · João Pessoa, PB</div>
+      </div>
+    </div>
+
+    <!-- Link cards -->
+    <div class="links">
+      <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20um%20hor%C3%A1rio." class="lcard" target="_blank" rel="noopener">
+        <div class="cico wa-ico"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill:#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+        <div class="ctxt"><div class="ct">Agendar horário</div><div class="cs">WhatsApp · Terça a sábado com hora marcada</div></div>
+        <div class="carr">→</div>
+      </a>
+      <div class="lcard" onclick="go('page-sobre')">
+        <div class="cico cal-ico photo-ico"><img src="assets/images/umdoladodaoutra.jpeg" alt="Enilma e Luciana"></div>
+        <div class="ctxt"><div class="ct">Sobre nós</div><div class="cs">Conheça Enilma, Luciana e a nossa história</div></div>
+        <div class="carr">→</div>
+      </div>
+      <div class="lcard" onclick="go('page-servicos')">
+        <div class="cico svc-ico">💇</div>
+        <div class="ctxt"><div class="ct">Serviços &amp; Catálogo</div><div class="cs">Alisamentos, mechas, coloração e tratamentos</div></div>
+        <div class="carr">→</div>
+      </div>
+      <a href="https://www.instagram.com/lumenespacodebeleza" class="lcard" target="_blank" rel="noopener">
+        <div class="cico ig-ico"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ig-g" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#ig-g)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+        <div class="ctxt"><div class="ct">Instagram</div><div class="cs">@lumenespacodebeleza</div></div>
+        <div class="carr">→</div>
+      </a>
+      <div class="lcard" onclick="go('page-chat')">
+        <div class="cico cal-ico photo-ico"><img src="assets/mascotes/mascotefeliz.svg" alt="Evo"></div>
+        <div class="ctxt"><div class="ct">Tire suas dúvidas com a Evo</div><div class="cs">Serviços, agendamento · Assistente digital</div></div>
+        <div class="carr">→</div>
+      </div>
+    </div>
+
+    <!-- Horários + Endereço -->
+    <div class="dv"><div class="dl"></div><div class="dt">Horários &amp; Localização</div><div class="dl"></div></div>
+
+    <div class="info-cards">
+
+      <!-- Horários -->
+      <div class="info-card">
+        <div class="info-card-head">
+          <span class="info-card-ico">🕐</span>
+          <span class="info-card-title">Horários de Funcionamento</span>
+        </div>
+        <div class="hours-grid">
+          <div class="hours-row open">
+            <span class="hours-day">Terça a Sexta</span>
+            <span class="hours-time">09h às 19h</span>
+          </div>
+          <div class="hours-row open">
+            <span class="hours-day">Sábado</span>
+            <span class="hours-time">09h às 17h</span>
+          </div>
+          <div class="hours-row closed">
+            <span class="hours-day">Domingo</span>
+            <span class="hours-time">Fechado</span>
+          </div>
+          <div class="hours-row closed">
+            <span class="hours-day">Segunda-feira</span>
+            <span class="hours-time">Fechado</span>
+          </div>
+        </div>
+        <p class="hours-note">⚠️ Todos os atendimentos são <strong>com hora marcada</strong></p>
+      </div>
+
+      <!-- Endereço -->
+      <div class="info-card">
+        <div class="info-card-head">
+          <span class="info-card-ico">📍</span>
+          <span class="info-card-title">Nosso Endereço</span>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=Rua+Joamir+Severino+dos+Santos,+357,+Valentina,+Jo%C3%A3o+Pessoa,+PB&output=embed"
+            width="100%" height="180" style="border:0;border-radius:10px;display:block"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="addr-text">Rua Joamir Severino dos Santos, 357<br>Valentina · João Pessoa, PB</div>
+        <a class="addr-link" href="https://maps.google.com/?q=Rua+Joamir+Severino+dos+Santos,+357,+Valentina,+Jo%C3%A3o+Pessoa,+PB" target="_blank" rel="noopener">
+          <span>📍</span> Ver no Google Maps →
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Nossos Serviços (carrossel) -->
+    <div class="dv"><div class="dl"></div><div class="dt">Nossos Serviços</div><div class="dl"></div></div>
+    <div class="motiv-wrap">
+      <div class="motiv-scroll">
+        <div class="mcard" onclick="go('page-servicos')">
+          <div class="mcard-media">
+            <div class="mcard-overlay">
+              <div class="mq-icon">💆</div>
+              <div class="mq-text">"Alisamento que transforma e realça a beleza dos fios."</div>
+              <div class="mq-tag">Selagem &amp; Botox</div>
+            </div>
+          </div>
+          <div class="mcard-foot"><div class="mcard-label">Alisamentos</div><div class="mcard-brand">Lúmen</div></div>
+        </div>
+        <div class="mcard" onclick="go('page-servicos')">
+          <div class="mcard-media">
+            <div class="mcard-overlay">
+              <div class="mq-icon">🌟</div>
+              <div class="mq-text">"Mechas personalizadas pro seu tom de pele e estilo."</div>
+              <div class="mq-tag">Mechas &amp; Morena</div>
+            </div>
+          </div>
+          <div class="mcard-foot"><div class="mcard-label">Coloração</div><div class="mcard-brand">Lúmen</div></div>
+        </div>
+        <div class="mcard" onclick="go('page-sobre')">
+          <div class="mcard-media">
+            <div class="mcard-overlay">
+              <div class="mq-icon">💛</div>
+              <div class="mq-text">"Dedicação, profissionalismo e amor pelo que fazemos."</div>
+              <div class="mq-tag">Nossa História</div>
+            </div>
+          </div>
+          <div class="mcard-foot"><div class="mcard-label">Sobre Nós</div><div class="mcard-brand">Lúmen</div></div>
+        </div>
+        <div class="mcard" onclick="go('page-servicos')">
+          <div class="mcard-media">
+            <div class="mcard-overlay">
+              <div class="mq-icon">💧</div>
+              <div class="mq-text">"Tratamentos que restauram a saúde e brilho dos fios."</div>
+              <div class="mq-tag">Tratamentos</div>
+            </div>
+          </div>
+          <div class="mcard-foot"><div class="mcard-label">Tratamentos</div><div class="mcard-brand">Lúmen</div></div>
+        </div>
+        <div class="mcard" onclick="go('page-chat')">
+          <div class="mcard-media">
+            <div class="mcard-overlay">
+              <div class="mq-icon">💬</div>
+              <div class="mq-text">"Tire suas dúvidas agora com a Evo."</div>
+              <div class="mq-tag">Assistente Digital</div>
+            </div>
+          </div>
+          <div class="mcard-foot"><div class="mcard-label">Pergunte Agora</div><div class="mcard-brand">Lúmen</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seletor de serviços -->
+    <div class="dv"><div class="dl"></div><div class="dt">O que você precisa?</div><div class="dl"></div></div>
+    <div class="symp-wrap">
+      <div class="symp-grid">
+        <button class="sc" onclick="sym(this,'selagem')">💆 Selagem</button>
+        <button class="sc" onclick="sym(this,'botox')">✨ Botox Capilar</button>
+        <button class="sc" onclick="sym(this,'mechas')">🌟 Mechas</button>
+        <button class="sc" onclick="sym(this,'morena')">🤎 Morena Iluminada</button>
+        <button class="sc" onclick="sym(this,'coloracao')">🎨 Coloração</button>
+        <button class="sc" onclick="sym(this,'corte')">✂️ Corte</button>
+        <button class="sc" onclick="sym(this,'hidratacao')">💧 Hidratação</button>
+        <button class="sc" onclick="sym(this,'reconstrucao')">🔬 Reconstrução</button>
+      </div>
+      <div class="sr" id="sr"></div>
+    </div>
+
+    <!-- Depoimentos -->
+    <div class="dv"><div class="dl"></div><div class="dt">O que dizem nossas clientes</div><div class="dl"></div></div>
+    <div class="test-wrap"><div class="test-track" id="tt"></div></div>
+
+    <div class="foot">
+      <div class="ft">
+        📍 Rua Joamir Severino dos Santos, 357 · Valentina · João Pessoa, PB<br>
+        📱 <a href="https://wa.me/5583996141570">(83) 99614-1570</a> &nbsp;·&nbsp;
+        <a href="https://instagram.com/lumenespacodebeleza">@lumenespacodebeleza</a>
+      </div>
+      <div class="fb">Evolvify · 2025</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FABs -->
+<div class="fabs" id="home-fabs">
+  <div class="fab-ai-wrap">
+    <span class="fab-ai-label">Tire dúvidas com a Evo</span>
+    <button class="fab fab-ai" onclick="go('page-chat')" title="Tire dúvidas com a Evo">
+      <img src="assets/mascotes/mascotefeliz.svg" alt="Evo">
+    </button>
+  </div>
+  <a class="fab fab-wa" href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20meu%20hor%C3%A1rio." target="_blank" rel="noopener" title="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+
+<!-- ════════════════════════════════
+     SOBRE NÓS
+════════════════════════════════ -->
+<div class="pg subpg" id="page-sobre">
+  <div class="sp-head">
+    <button class="back-btn" onclick="back()">←</button>
+    <div class="sp-title">Sobre Nós</div>
+  </div>
+  <div class="sp-body">
+    <div class="sobre-foto">
+      <img src="assets/images/1pe1sentada.jpeg" alt="Enilma e Luciana — Lúmen Espaço de Beleza">
+    </div>
+    <div class="exp-badges">
+      <span class="exp-b">Fundado em 2012</span>
+      <span class="exp-b">+13 anos de experiência</span>
+      <span class="exp-b">14+ serviços</span>
+      <span class="exp-b">João Pessoa, PB</span>
+      <span class="exp-b">Terça a sábado</span>
+    </div>
+    <div class="sobre-block">
+      <div class="sobre-label">Nossa História</div>
+      <div class="sobre-txt">Somos <strong>Enilma e Luciana</strong>, fundadoras do Lúmen Espaço de Beleza, criado em <strong>2012</strong> com o propósito de realçar a beleza e fortalecer a autoestima de cada cliente.</div>
+    </div>
+    <div class="sobre-block">
+      <div class="sobre-label">Nossa Missão</div>
+      <div class="sobre-txt">Com <strong>dedicação, profissionalismo e amor pelo que fazemos</strong>, oferecemos um atendimento personalizado em um ambiente acolhedor, onde cada detalhe é pensado para proporcionar <strong>bem-estar e confiança</strong>. Será um prazer atender você!</div>
+    </div>
+    <div class="sobre-block">
+      <div class="sobre-label">Combinados Importantes</div>
+      <div class="sobre-txt">
+        Atendemos com <strong>hora marcada</strong> e sempre confirmamos com antecedência. Caso não possa comparecer, nos comunique no ato.<br><br>
+        Toleramos até <strong>20 minutos de atraso</strong> — após isso o atendimento pode ser cancelado ou ajustado conforme o tempo disponível.<br><br>
+        Para <strong>reagendar</strong>, entre em contato com pelo menos <strong>24 horas de antecedência</strong>.
+      </div>
+    </div>
+    <div class="sobre-block">
+      <div class="sobre-label">Novidades & Promoções</div>
+      <div class="sobre-txt">Todos os meses preparamos <strong>pacotes promocionais exclusivos</strong>! Fique sempre atenta às nossas redes sociais para aproveitar. Também dispomos de <strong>produtos específicos</strong> para cada tipo de cabelo — importantes para a manutenção e cuidados em casa.</div>
+    </div>
+    <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%2C%20vi%20o%20perfil%20de%20voc%C3%AAs%20e%20quero%20agendar%20um%20hor%C3%A1rio." class="cta-btn" target="_blank" rel="noopener">Agendar meu horário</a>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════
+     CATÁLOGO DE SERVIÇOS
+════════════════════════════════ -->
+<div class="pg subpg" id="page-servicos">
+  <div class="sp-head">
+    <button class="back-btn" onclick="back()">←</button>
+    <div class="sp-title">Catálogo de Serviços</div>
+  </div>
+  <div class="sp-body">
+    <div class="cat-tabs">
+      <button class="ctab on" onclick="ctab(this,'srv-alisamentos')">💆 Alisamentos</button>
+      <button class="ctab" onclick="ctab(this,'srv-coloracao')">✨ Coloração</button>
+      <button class="ctab" onclick="ctab(this,'srv-tratamentos')">💧 Tratamentos</button>
+      <button class="ctab" onclick="ctab(this,'srv-regeneracao')">🔬 Regeneração</button>
+    </div>
+
+    <!-- ── ALISAMENTOS ── -->
+    <div class="cat-pane on" id="srv-alisamentos">
+      <div class="cat-hero-row">
+        <div class="cat-ico" style="background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.18)">💆</div>
+        <div><div class="cat-name">Alisamentos</div><div class="cat-sub">Reduz volume, elimina frizz e realinha os fios</div></div>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">💎</div>
+          <div><div class="srv-ttl">Selagem</div><div class="srv-sub">Alisamento capilar premium</div></div>
+        </div>
+        <p class="srv-desc">Alisamento capilar que reduz o volume, elimina o frizz e deixa os fios mais alinhados e brilhosos.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 150+</div><div class="info-l">A partir de</div></div>
+          <div class="info-box"><div class="info-v">3h – 4h</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20uma%20Selagem%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Selagem</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">✨</div>
+          <div><div class="srv-ttl">Botox Capilar</div><div class="srv-sub">Redução de volume suave · ~2 meses de duração</div></div>
+        </div>
+        <p class="srv-desc">Redução de volume mais suave, elimina o frizz e dura em média 2 meses. Ideal para resultados naturais.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 110+</div><div class="info-l">A partir de</div></div>
+          <div class="info-box"><div class="info-v">2h30 – 3h30</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Botox%20Capilar%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Botox Capilar</a>
+      </div>
+
+      <div style="text-align:center;padding:8px 0 4px">
+        <p style="font-size:11.5px;color:var(--dim);line-height:1.6">Dúvidas sobre qual alisamento escolher?<br>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20tenho%20d%C3%BAvidas%20sobre%20alisamentos." style="color:var(--g);font-weight:600" target="_blank" rel="noopener">Fale direto com o salão →</a></p>
+      </div>
+    </div>
+
+    <!-- ── COLORAÇÃO ── -->
+    <div class="cat-pane" id="srv-coloracao">
+      <div class="cat-hero-row">
+        <div class="cat-ico" style="background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.18)">✨</div>
+        <div><div class="cat-name">Coloração</div><div class="cat-sub">Mechas, morena iluminada e coloração profissional</div></div>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">🌟</div>
+          <div><div class="srv-ttl">Mechas</div><div class="srv-sub">Loiros personalizados por tom de pele</div></div>
+        </div>
+        <p class="srv-desc">As mechas loiras trazem luminosidade, sofisticação e um efeito radiante. Cada loiro é personalizado para harmonizar com seu tom de pele e estilo, garantindo um resultado moderno e cheio de brilho.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 400+</div><div class="info-l">A partir de</div></div>
+          <div class="info-box"><div class="info-v">4h – 5h</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Mechas%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Mechas</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">🤎</div>
+          <div><div class="srv-ttl">Morena Iluminada</div><div class="srv-sub">Pontos de luz naturais e sofisticados</div></div>
+        </div>
+        <p class="srv-desc">Perfeito para quem deseja realçar a beleza dos fios com leveza, brilho e naturalidade, criando pontos de luz que valorizam o rosto e o movimento do cabelo.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 350+</div><div class="info-l">A partir de</div></div>
+          <div class="info-box"><div class="info-v">3h – 4h</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Morena%20Iluminada%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Morena Iluminada</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">🎨</div>
+          <div><div class="srv-ttl">Coloração</div><div class="srv-sub">Tinta do salão ou da cliente</div></div>
+        </div>
+        <p class="srv-desc">Coloração profissional com acabamento impecável. Escolha a opção que melhor se encaixa pra você:</p>
+        <div class="plan-highlight" style="margin-bottom:10px">
+          <div class="plan-badge">Completo</div>
+          <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:4px">Coloração do salão</div>
+          <div style="font-size:12px;color:var(--dim);margin-bottom:10px">Já com tratamento e escova inclusos · A partir de R$150</div>
+          <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Colora%C3%A7%C3%A3o%20com%20tinta%20do%20sal%C3%A3o%20no%20L%C3%BAmen." class="cta-btn" style="margin-top:0" target="_blank" rel="noopener">Agendar (tinta do salão)</a>
+        </div>
+        <div class="plan-regular">
+          <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:4px">Aplicação com tinta da cliente</div>
+          <div style="font-size:12px;color:var(--dim);margin-bottom:10px">Não inclui escova nem tratamento · R$50,00</div>
+          <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20aplica%C3%A7%C3%A3o%20de%20Colora%C3%A7%C3%A3o%20com%20minha%20tinta%20no%20L%C3%BAmen." class="cta-btn" style="background:transparent;border:1.5px solid rgba(201,168,76,.35);color:var(--g);box-shadow:none;margin-top:0" target="_blank" rel="noopener">Agendar (tinta própria)</a>
+        </div>
+        <p style="font-size:11px;color:var(--dim);text-align:center;margin-top:6px">⏱ Duração: 2h a 3h</p>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">✂️</div>
+          <div><div class="srv-ttl">Corte</div><div class="srv-sub">Preciso e personalizado</div></div>
+        </div>
+        <p class="srv-desc">Corte profissional realizado por Enilma ou Luciana. Não inclui escova.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 60</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">30 min</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20um%20Corte%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Corte</a>
+      </div>
+    </div>
+
+    <!-- ── TRATAMENTOS ── -->
+    <div class="cat-pane" id="srv-tratamentos">
+      <div class="cat-hero-row">
+        <div class="cat-ico" style="background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.18)">💧</div>
+        <div><div class="cat-name">Tratamentos</div><div class="cat-sub">Nutrição, hidratação e recuperação capilar</div></div>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">🌿</div>
+          <div><div class="srv-ttl">Nutrição + Escova</div><div class="srv-sub">Óleos preciosos e reposição lipídica</div></div>
+        </div>
+        <p class="srv-desc">Associação extraordinária de óleos preciosos, confere nutrição avançada e reposição da lipídica. Resgata a maciez e suavidade dos cabelos.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 90</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">2h – 2h30</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Nutri%C3%A7%C3%A3o%20%2B%20Escova%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Nutrição + Escova</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">💪</div>
+          <div><div class="srv-ttl">Reconstrução + Escova</div><div class="srv-sub">SOS para fios danificados</div></div>
+        </div>
+        <p class="srv-desc">Ideal para quem precisa de um socorro imediato nos fios. Selamos a queratina no fio, promovendo maior permeação dos ativos e devolvendo força.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 130</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">2h30 – 3h</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Reconstru%C3%A7%C3%A3o%20%2B%20Escova%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Reconstrução + Escova</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">💧</div>
+          <div><div class="srv-ttl">Hidratação + Escova</div><div class="srv-sub">Maciez, brilho e saúde do fio</div></div>
+        </div>
+        <p class="srv-desc">A hidratação repõe a água do fio perdida no dia a dia. Promove maciez, brilho e ajuda a manter a saúde do fio.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 80</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">1h30 – 2h</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Hidrata%C3%A7%C3%A3o%20%2B%20Escova%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Hidratação + Escova</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">🌿</div>
+          <div><div class="srv-ttl">Esfoliante Capilar + Escova</div><div class="srv-sub">Argila branca · Reduz oleosidade</div></div>
+        </div>
+        <p class="srv-desc">Formulado com argila branca e ativos calmantes, promove esfoliação suave, redução da oleosidade e maciez ao fio. Protege contra metais pesados (cloro, cobre e ferro).</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 80</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">1h30 – 2h</div><div class="info-l">Duração</div></div>
+        </div>
+        <p style="font-size:11px;color:var(--dim);margin-bottom:10px">+ R$30,00 com alta frequência</p>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Esfoliante%20Capilar%20%2B%20Escova%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Esfoliante Capilar</a>
+      </div>
+    </div>
+
+    <!-- ── REGENERAÇÃO ── -->
+    <div class="cat-pane" id="srv-regeneracao">
+      <div class="cat-hero-row">
+        <div class="cat-ico" style="background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.18)">🔬</div>
+        <div><div class="cat-name">Regeneração</div><div class="cat-sub">Reconstrução profunda e reparação capilar</div></div>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">⚡</div>
+          <div><div class="srv-ttl">SOS Roffe</div><div class="srv-sub">Reconstrução e reparação da cutícula</div></div>
+        </div>
+        <p class="srv-desc">Desenvolvido para potencializar a reconstrução e reparação da cutícula capilar, além de atuar na reposição de massa perdida. Devolve força e elasticidade aos cabelos fragilizados.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 90</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">1h30 – 2h</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20SOS%20Roffe%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar SOS Roffe</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">✨</div>
+          <div><div class="srv-ttl">Cauterização Roffe</div><div class="srv-sub">Reconstrutor profundo · Queratina + proteína do trigo</div></div>
+        </div>
+        <p class="srv-desc">Reconstrutor profundo desde a primeira aplicação. Multi-ativos em sinergia para uma completa restauração. Atua sobre todos os filamentos do fio interno e externamente. Rico em queratina e proteína do trigo.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 100</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">2h – 2h30</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Cauteriza%C3%A7%C3%A3o%20Roffe%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Cauterização Roffe</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">🌸</div>
+          <div><div class="srv-ttl">Pós Química Madeishas</div><div class="srv-sub">Alto poder de tratamento · Fibra capilar</div></div>
+        </div>
+        <p class="srv-desc">Alto poder de tratamento, repara intensamente a fibra capilar. Possui ingredientes altamente hidratantes e nutritivos responsáveis pela beleza e saúde dos fios.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 100</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">1h30 – 2h</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20P%C3%B3s%20Qu%C3%ADmica%20Madeishas%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Pós Química Madeishas</a>
+      </div>
+
+      <div class="srv-block">
+        <div class="srv-head">
+          <div class="srv-ico">💎</div>
+          <div><div class="srv-ttl">Cauterização Madeishas</div><div class="srv-sub">Aminoácidos + colágeno + ômega 3,6,9</div></div>
+        </div>
+        <p class="srv-desc">Transforma os fios elásticos e emborrachados, através da sua ação química, em cabelos totalmente saudáveis, macios e recuperados em minutos. Rico em aminoácidos, colágeno e ômega 3,6,9.</p>
+        <div class="info-row">
+          <div class="info-box"><div class="info-v">R$ 120</div><div class="info-l">Valor</div></div>
+          <div class="info-box"><div class="info-v">2h – 2h30</div><div class="info-l">Duração</div></div>
+        </div>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20agendar%20Cauteriza%C3%A7%C3%A3o%20Madeishas%20no%20L%C3%BAmen." class="cta-btn" target="_blank" rel="noopener">Agendar Cauterização Madeishas</a>
+      </div>
+
+      <div style="text-align:center;padding:8px 0 4px">
+        <p style="font-size:11.5px;color:var(--dim);line-height:1.6">Dúvidas sobre qual tratamento é o ideal pra você?<br>
+        <a href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20preciso%20de%20uma%20indica%C3%A7%C3%A3o%20de%20tratamento%20para%20meu%20cabelo." style="color:var(--g);font-weight:600" target="_blank" rel="noopener">Fale direto com o salão →</a></p>
+      </div>
+    </div>
+
+    <!-- Baixar catálogo PDF -->
+    <div class="pdf-banner">
+      <div class="pdf-banner-icon">📄</div>
+      <div class="pdf-banner-text">
+        <div class="pdf-banner-title">Catálogo Completo</div>
+        <div class="pdf-banner-sub">Todos os serviços e preços em um só lugar</div>
+      </div>
+      <a class="pdf-banner-btn" href="assets/source/catalogo.pdf" download="Catalogo-Lumen.pdf">
+        Baixar PDF
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════
+     CHAT — Evo
+════════════════════════════════ -->
+<div class="pg subpg" id="page-chat">
+  <div class="sp-head">
+    <button class="back-btn" onclick="back()">←</button>
+    <div class="sp-title"><span class="ai-dot"></span>Evo · Lúmen</div>
+    <a class="handoff-btn" href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20quero%20falar%20com%20o%20sal%C3%A3o." target="_blank" rel="noopener">💇 Lúmen</a>
+  </div>
+  <div class="handoff-bar">
+    <div class="handoff-txt">Prefere falar direto com o salão?</div>
+    <a class="handoff-btn" href="https://wa.me/5583996141570?text=Vim%20pelo%20biolink%20e%20tenho%20uma%20d%C3%BAvida%20sobre%20os%20servi%C3%A7os." target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+  <div class="chat-area" id="chat-area"></div>
+  <div class="chat-bottom">
+    <div class="chat-qr" id="chat-qr"></div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════
+     SCRIPTS — ordem de dependência
+════════════════════════════════ -->
+<script src="chatbot/config.js"></script>
+<script src="chatbot/flows.js"></script>
+<script src="chatbot/engine.js"></script>
+<script src="data/testimonials.js"></script>
+<script src="data/smap.js"></script>
+<script src="js/video.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
